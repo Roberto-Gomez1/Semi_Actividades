@@ -11,7 +11,7 @@ app.use(cors());
 
 //Verificacion de estado
 app.get('/check', (req, res) => {
-    res.status(201).json({message: 'OK'});
+    res.status(200).json({message: 'OK'});
 });
 
 //Obtener el json

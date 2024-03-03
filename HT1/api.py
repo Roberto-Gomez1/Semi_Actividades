@@ -8,7 +8,9 @@ CORS(app)
 
 @app.route('/check', methods=['GET'])
 def check():
-    return jsonify({"message": "OK"})
+    response = jsonify({"message": "OK"})
+    response.status_code = 200
+    return response
 
 @app.route('/' , methods=['GET'])
 def home():
